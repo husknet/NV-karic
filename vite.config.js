@@ -4,11 +4,8 @@ import { sveltekit } from '@sveltejs/kit/vite';
 const config = {
   plugins: [sveltekit()],
   server: {
-    port: 3000, // Specify the development server port
-    strictPort: true, // If true, ensures the server fails if the port is already in use
-    fs: {
-      allow: ['..'] // Allow access to files outside the project root
-    }
+    port: 3000,
+    strictPort: true
   },
   resolve: {
     alias: {
@@ -17,9 +14,6 @@ const config = {
       $components: '/src/components',
       $static: '/static'
     }
-  },
-  build: {
-    sourcemap: true // Enables source maps for easier debugging
   }
 };
 
